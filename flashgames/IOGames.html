@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Most Played IO Games</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgba(5, 15, 19, 0.882);
+    }
+  
+    h1 {
+      text-align: center;
+      background-color: rgba(179, 184, 186, 0.882);
+    }
+  
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: rgb(89, 89, 80);
+      color: rgb(255, 254, 254);
+    }
+  
+    .top-bar a {
+      color: rgb(255, 253, 253);
+      text-decoration: none;
+    }
+  
+    .dark-mode-toggle {
+      margin-right: 10px;
+    }
+  
+    .game-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  
+    .game-card {
+      width: 250px;
+      background-color: rgb(123, 113, 126);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(120, 119, 119, 0.1);
+      margin: 15px;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+  
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+  
+    .game-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .game-card p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="dark-mode-toggle">
+      <label for="dark-mode-checkbox">Dark Mode</label>
+      <input type="checkbox" id="dark-mode-checkbox">
+    </div>
+    <div class="login-feature">
+      <a href="#">Login</a>
+    </div>
+  </div>
+
+  <h1>Most Played IO Games</h1>
+  
+  <div class="game-container">
+    <div class="game-card">
+      <a href="https://skribbl.io" target="_blank">
+        <img src="images/Skribbl.io.jpg" alt="Skribbl.io">
+      </a>
+      <p>Skribbl.io is a multiplayer drawing and guessing game. Play with friends or strangers and have fun!</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://diep.io" target="_blank">
+        <img src="images/Diep.io.jpg" alt="Diep.io">
+      </a>
+      <p>Diep.io is a multiplayer tank battle game where you upgrade your tank and compete against others.</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://slither.io" target="_blank">
+        <img src="images/Slither.io.jpg" alt="Slither.io">
+      </a>
+      <p>Slither.io is a classic multiplayer snake game where you grow your snake by eating glowing orbs.</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://agar.io" target="_blank">
+        <img src="images/Agar.io.jpg" alt="Agar.io">
+      </a>
+      <p>Agar.io is a massively multiplayer online action game where you control a cell and consume others to grow.</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://flappyroyale.io" target="_blank">
+        <img src="images/Flappyroyale.io.jpg" alt="Flappyroyale.io">
+      </a>
+      <p>Flappyroyale.io is a battle royale version of the classic Flappy Bird game where you compete against other players.</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://2048.io" target="_blank">
+        <img src="images/2048.io.jpg" alt="2048.io">
+      </a>
+      <p>2048.io is a multiplayer version of the popular puzzle game 2048. Merge tiles and reach the highest number!</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://tetr.io" target="_blank">
+        <img src="images/Tetr.io.jpg" alt="Tetr.io">
+      </a>
+      <p>Tetr.io is a multiplayer Tetris game. Clear lines and compete against other players to achieve the highest score.</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://eatme.io" target="_blank">
+        <img src="images/Eatme.io.jpg" alt="Eatme.io">
+      </a>
+      <p>Eatme.io is an underwater multiplayer battle game where you control a fish and eat smaller creatures to grow.</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://starve.io" target="_blank">
+        <img src="images/Starve.io.jpg" alt="Starve.io">
+      </a>
+      <p>Starve.io is a survival game where you need to gather resources, craft items, and defend yourself against other players.</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://cardgames.io" target="_blank">
+        <img src="images/Cardgames.io.jpg" alt="Cardgames.io">
+      </a>
+      <p>Cardgames.io offers a variety of popular card games to play online with friends or other players.</p>
+    </div>
+  
+    <div class="game-card">
+      <a href="https://krunker.io" target="_blank">
+        <img src="images/Krunker.io.jpg" alt="Krunker.io">
+      </a>
+      <p>Krunker.io is an intense online multiplayer first-person shooter game with various game modes and fast-paced action.</p>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript functionality for dark mode toggle
+    const darkModeCheckbox = document.getElementById("dark-mode-checkbox");
+    const body = document.body;
+
+    darkModeCheckbox.addEventListener("change", function() {
+      body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>
